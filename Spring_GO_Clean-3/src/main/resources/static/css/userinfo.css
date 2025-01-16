@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Form container styles */
+#userdetails {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #333;
+    border-radius: 20px;
+    border: 4px solid rgba(40, 41, 41, 0.84);
+    box-shadow: 0px 0px 80px white;
+}
+
+/* Fieldset styles */
+fieldset {
+    border: 2px solid #f57f17; /* Orange border color */
+    border-radius: 15px;
+    padding: 10px 40px;
+    background-color: #86c9f586;
+}
+
+/* Legend styles */
+legend {
+    color: #f57f17; /* Orange text color */
+    font-size: 1.5em;
+}
+
+/* Headings styles */
+.head {
+    color: #f57f17; /* Orange color for headings */
+}
+
+/* Label styles */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    background-color: #cedde3;
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Input focus styles */
+input:focus,
+select:focus {
+    border-color: #f57f17; /* Orange border color on focus */
+    outline: none;
+}
+
+/* Radio and checkbox styles */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Button styles */
+button {
+    background-color: #f57f17; /* Orange button background */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Button hover styles */
+button:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+}
+
+/* Dropdown styles */
+select.dropdown {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Container for district, taluka, and city */
+.container {
+    margin-bottom: 20px;
+}
+
+/* Checkbox container */
+#checkbox {
+    margin-bottom: 20px;
+}
+
+/* Checkbox label */
+#checkbox label {
+    margin-left: 8px;
+}

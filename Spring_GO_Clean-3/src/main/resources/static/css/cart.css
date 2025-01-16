@@ -1,0 +1,54 @@
+@charset "UTF-8";
+body{
+	color:white;
+}
+
+#cartmain{
+	padding:  10px 100px 30px;
+}
+
+h1{
+	margin-top: 50px;
+}
+
+tr{
+	border: 2px solid  black;
+	color: rgb(0, 0, 0);
+}
+td{
+	color: black;
+	padding: 8px;
+	text-align: center;
+	font-weight: bold;
+}
+td img{
+	width: 100px;
+	margin: 2px;
+	border-radius: 6px;
+}
+th{
+	padding: 0px 10px;
+}
+
+.status-completed {
+    color: green;
+}
+.status-pending {
+    color: orange;
+}
+.status-progress {
+    color: blue;
+}
+        
+
+button{
+	background-color: green;
+	font-weight: 20px;
+	border-radius: 2px;
+	border: 2px solid black;
+}
+button:hover{
+	background-color: black;
+	border: 1px solid aliceblue;
+	color: green;
+}

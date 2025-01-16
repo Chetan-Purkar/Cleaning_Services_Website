@@ -1,0 +1,152 @@
+@charset "UTF-8";
+body {
+    background-color: #232020;
+    margin: 0;
+    padding:0;
+    padding-top: 70px; /* Adjusted to account for the fixed nav bar height */
+    border-top: none;
+    border: 10px solid #0e0909;
+    scroll-behavior: smooth;
+}
+
+nav {
+    margin: 0 8px; 
+    height:auto;
+    align-items: center;
+    display: flex;
+    justify-content:space-around;
+    position: fixed;
+    padding:0;
+    top: 0;
+    left:0;
+    width: 97.6%;
+    background-color: #383333; 
+    border: 10px solid #0e0909;
+    z-index: 999999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+}
+
+#logo img {
+    width: 60px;
+    height: 50px;
+    margin: 0;
+}
+#title{
+    color: chocolate;
+    font-size: 22px;
+    text-shadow: 4px 4px 4px black;
+}
+
+#Home a{
+    text-decoration: none ;
+    font-size: large;
+    color: rgb(237, 192, 159);
+    font-weight: 800;
+    margin: 0 0 0 50px;
+}
+#about a{
+    text-decoration: none ;
+    font-size: large;
+    color: rgb(237, 192, 159);
+    font-weight: 800;
+    margin: 0 0 0 50px;
+}
+
+nav .user {
+    text-align: center;
+    justify-self: start;
+    margin: 0;
+   
+}
+nav .user h4 {
+    text-decoration: none ;
+    font-size: large;
+    color: rgb(46, 108, 162);
+    font-weight: 800;
+    margin: 0;
+   
+}
+
+nav .user a {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 800;
+    color: rgb(237, 192, 159);
+}
+
+nav .user a:hover ,#Home a:hover{
+    color: blue;
+}
+
+#cart img {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+}
+
+.bottom-nav {
+    display: none;
+}
+
+.bottom-nav-link {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(248, 112, 8);
+}
+
+.bottom-nav-link img {
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 0 auto 5px;
+}
+
+@media (max-width: 768px) {
+    .bottom-nav {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        bottom: 0px;
+        left: 0;
+        padding: 2px;
+        width: 100%;
+        height: 80px;
+        background-color: #333;
+        border-top: 2px solid #12171b;
+        z-index: 1000;
+    }
+    
+    nav{
+    	width:92%;
+    	padding: 0;
+    }
+    
+    #title{
+	    height:50px;
+	    color: chocolate;
+	    padding: 0;
+	    
+	}
+	#title h4{
+	   	margin-top:8px;
+	   	text-align:center;
+	    padding: 0;
+	    
+	}
+
+    nav .user {
+        display: none;
+    }
+    #cart img{
+        display: none;
+    }
+    #Home {
+        display: none;
+    }
+}

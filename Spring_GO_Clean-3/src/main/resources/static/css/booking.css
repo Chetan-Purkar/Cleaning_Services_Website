@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+
+#discription{
+    
+    width: auto;
+    padding: 10px 20px;
+    display: block;
+}
+#discription h2{
+    width: auto;
+    padding: 2px;
+    color: gold;
+}
+
+#NoItem{
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+#NoItem p{
+    width: auto;
+    padding: 2px;
+    color: rgb(248, 113, 3);
+}
+#discription .discmain{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 30px;
+    margin: auto;
+}
+
+#discription #discmain{
+    display: flex;
+}
+
+#discription .discmain2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+}
+
+
+#discription #discClose{
+    width: 20px;
+    color: rgb(162, 8, 8);
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: 20px 300px;
+    cursor: pointer;
+}
+
+#discription .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: relative;
+    z-index: 1;
+  }
+
+#discription #discClose:hover .tooltiptext{
+    visibility: visible;
+}
+
+#discription img{
+    width: 300px;
+    padding: 1px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+#discription #disc{
+    color: black;
+    display: flex;
+}
+#discription div{
+    display: flex;
+}
+#discription span{
+    color: rgb(213, 144, 15);
+    margin: 4px;
+    padding: 10px;
+    flex-direction: row;
+    display: flex;
+}
+#discription h4{
+    color: rgb(213, 144, 15);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+#discription button{
+    background-color: black;
+    color: rgb(249, 127, 4);
+    margin: 1px;
+    padding: 1px 15px;
+    flex-direction: row;
+}
+#discription #More{
+    background-color: black;
+    color: rgb(249, 127, 4);
+    margin: 1px 80px;
+    padding: 6px;
+    flex-direction: row;
+}
+
+#bookingForm a{
+	color:blue;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#bookingForm a:hover{
+	text-decoration: underline;
+}
+
+#bookprice{
+	margin: auto;
+	align-items: center
+}
+
+#bookprice spam, h4{
+	margin: auto;
+	align-items: center
+}		
+
+
+#userinfo{
+	margin: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#userinfo input, lable{
+	margin: 5px 5px;
+	padding:5px;
+}
+#userinfo #LAddress{
+	width:300px;
+}
+
+
+#foot {
+    /* border: 3px solid red; */
+    width: auto;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+}
+
+#footer{
+    margin: 20px;
+    text-align: left;
+    width: 30%;
+}
+
+#footer a{
+   display: none;
+}
+
+#footer1{
+    margin: 20px;
+    text-align: left;
+    width: 30%;
+}
+#footer2{
+    margin: 20px;
+    text-align: left;
+    width: 30%;
+}
+
+#footer span,#footer1 span, #footer2 span{
+    margin: 8px;
+    display: flex;
+}
+
+#foot .lasttitle{
+    cursor: pointer;
+    margin-top: 4px;
+    margin-bottom: 0;
+    right: 0;
+    text-decoration: none;
+}
+#foot a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+} 
+
+

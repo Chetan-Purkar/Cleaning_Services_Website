@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body {
+    background-color: aliceblue;
+    margin: 0;
+    border: 10px solid #333;
+    scroll-behavior: smooth;
+}
+
+.container{
+	margin: 50px 100px;
+}
+
+.form-group{
+	margin:10px;
+}
+.contact-info a{
+	color:blue;
+}

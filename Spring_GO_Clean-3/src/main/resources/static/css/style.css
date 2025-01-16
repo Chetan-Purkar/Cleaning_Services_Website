@@ -1,0 +1,491 @@
+@charset "UTF-8";
+body {
+    background-color: aliceblue;
+    margin: 0;
+    border: 10px solid #333;
+    scroll-behavior: smooth;
+}
+h1{
+	 color: chocolate;
+	 text-shadow: 2px 2px 2px black;
+}
+span{
+	 color: black;
+}
+
+#intro {
+    margin: 60px 30px 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+#intro .head {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+#intro .head p,
+.Location,
+#Contact1,
+#Contact2,
+.Email {
+    margin: 2px 0;
+    cursor: pointer;
+    color: rgb(19, 19, 132);
+}
+
+#Contact1:hover,
+#Contact2:hover {
+    color: blue;
+}
+
+.Location:hover,
+.Email:hover {
+    color: blue;
+    text-decoration: underline;
+}
+.options a{
+	color: rgb(52, 52, 205)he;
+}
+
+#intro .img {
+    width: 40%;
+    padding: 10px 14px 8px 10px;
+    display: block;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 0 30px black;
+    background-color: black;
+}
+
+#intro .img img {
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+#book {
+    margin: auto;
+    align-items: center;
+    padding: 0;
+    max-width: 100%;
+}
+
+#book h2,
+#book p {
+    background-color: rgb(128, 64, 64);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+/* Container for the slideshow */
+.slideshow-container {
+    max-width: 400px;
+    position: relative;
+    margin: auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.mySlides {
+    display: none; /* Hide all slides by default */
+    width: 400px;
+    border-radius: 8px;
+}
+
+.offimage {
+	vertical-align: middle;
+    height:250px;
+    border-radius: 8px;
+    border : 10px solid black;
+    box-shadow: 0 0 30px black;
+}
+
+/* Text inside the slides */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    border-radius: 8px;
+    margin : auto;
+    bottom: 8px;
+    width: 94%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+/* Number text (1/3 etc.) */
+.numbertext {
+    color: aliceblue;
+    background-color: #33333346;
+    font-size: 12px;
+    padding: 20px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Dots/bullets/indicators */
+.doted {
+    text-align: center;
+    padding: 20px;
+}
+
+.doted .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+#book {
+	margin-bottom: 20px
+}
+
+
+.container {
+    display: flex; /* Use flexbox for the container */
+    flex-wrap: wrap; /* Allow items to wrap into multiple rows */
+    gap: 20px; /* Space between the columns */
+    padding: 20px; /* Padding for the container */
+}
+
+.category-container {
+    flex: 1; /* Grow to fill available space */
+    min-width: 200px; /* Minimum width for the category column */
+    max-width: 300px; /* Maximum width for the category column */
+    background-color: #f9f9f9; /* Light background for categories */
+    padding: 20px; /* Padding inside the category column */
+    border: 1px solid #ccc; /* Border for category column */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.product-list {
+    flex: 2; /* Grow more than the category column */
+    display: flex; /* Flexbox for product items */
+    flex-wrap: wrap; /* Allow products to wrap into rows */
+    gap: 20px; /* Space between product items */
+    flex-basis: 60%; /* Basis for the product list */
+    background-color: #fff; /* White background for products */
+    padding: 20px; /* Padding inside the product list */
+    border: 1px solid #ccc; /* Border for product list */
+    border-radius: 5px; /* Rounded corners */
+    overflow: scroll;
+}
+
+.category-card, .product-item {
+    border: 1px solid #ddd; /* Border for cards/items */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 10px; /* Padding inside cards/items */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.category-card:hover, .product-item:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+    color :black;
+    text-decoration: none;  
+}
+.category-card.active {
+    background-color: #c0c0c0;
+    color: white;
+}
+
+
+.product-item {
+    width: calc(24% - 10px); /* Two items per row with gap */
+    box-sizing: border-box; /* Include padding and border in width */
+    color : black;
+    height: 350px;
+    padding: 20px;
+}
+.product-item a {
+    color :black;
+    text-decoration: none;    
+}
+.product-item a:hover {
+    color :black;
+    text-decoration: none;    
+}
+
+.product-item  p{
+    width: 200px; /* Define the width of the container */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    overflow: hidden; /* Hide the overflow text */
+    text-overflow: ellipsis; /* Add ellipsis (...) to indicate overflow */
+    margin: 0;
+}
+
+.product-item img {
+    width: 200px;
+    height: 100px; /* Two items per row with gap */
+    border-radius: 5px;
+    
+}
+
+@media (max-width: 768px) {
+    .product-item {
+        width: calc(100% - 10px); /* Stack items on smaller screens */
+    }
+}
+
+
+
+
+#service {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#service h2 {
+    margin: 10px 0;
+    padding: 8px 50px;
+    background-color: rgb(128, 64, 64);
+    width: 100%;
+}
+
+.services {
+   
+    padding: 10px;
+    margin: auto;
+    width: 255px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.services  img {
+	width:90%;
+	height:150px;
+	border: 4px solid black;
+    border-radius: 8px;
+    box-shadow: 0 0 40px black;
+}
+
+.conteniar {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.services .title {
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.offer{
+	display: flex;
+	flex-direction:row;
+	margin: 0px;
+}
+
+.offer spam, p{
+	margin: 0 4px;
+}
+
+.diwali{
+	color:white;
+	font:bold;
+	font-weight: 14px;
+	padding: 4px;
+	background-color: rgb(246, 11, 11);
+}
+
+
+
+#stats {
+    width: auto;
+    margin-bottom: 20px;
+    margin: auto;
+   
+}
+
+#stats h2 {
+    background-color: rgb(128, 64, 64);
+    padding: 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#stats .conteniar{
+	margin: auto;
+	text-align: center;
+	justify-content: space-around;
+}
+
+
+
+#stats staters{
+	margin: auto;
+}
+#stats .staters img{
+	margin: auto;
+	width: 100px;
+	border-radius: 10%;
+	border: 2px splid black;
+}
+#stats .staters p{
+	color: green;
+	padding: 1px;
+	margin: 0;
+	font-weight: 15px;
+}
+
+#about {
+    color: black;
+    position: relative;
+}
+
+#about .container{
+    padding: 10px 100px;
+	
+}
+#about .container a{
+   color:blue;
+	
+}
+
+#about h2 {
+    background-color: rgb(128, 64, 64);
+    padding: 10px;
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    h1{
+    	font-size:small;
+    }
+    
+    h4 {
+        font-size: medium;
+    }
+
+    nav .dropdown {
+        margin-left: 2px;
+    }
+
+    #intro {
+        margin: 60px 20px 20px 20px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    #intro .head h2, h3, p, span, a {
+        font-size: x-small;
+        margin: 0px;
+        padding: 0px;
+    }
+    .options a{
+    	font-size: x-small;
+    	margin: 0;
+    	padding: 2px;
+    	justify-content: space-between;
+    }
+
+    #book h2, #book p, #offer h1, #stats h2, #about h2 {
+        font-size: small;
+    }
+    #contact{
+    	display: flex;
+    	text-align: center;
+    	margin: auto;
+    }
+
+    #offer {
+        margin: 5px auto;
+        padding: 10px  0 ;
+    }
+
+    #offer .numbertext, #offer .text {
+        font-size: small;
+    }
+
+    #offer .dot {
+        height: 6px;
+        width: 6px;
+    }
+    
+    #about .conteniar {
+    	margin:auto;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        padding: 2px;
+    }
+    
+    #service h2{
+    	margin: 10px;
+    	padding: 8px;
+    	background-color: #4a1b1b;
+    }
+
+    .services {
+        margin-bottom:8px;
+     	width: 150px;
+     	height:auto;
+        display: flex;
+        flex-wrap:wrap;
+    	justify-content:space-between;
+    	align-items:center;
+        padding: 2px;
+    }
+
+    .services img {
+        width: 140px;
+        height: 100px;
+    }
+     .services h4 {
+        padding: 0;
+        margin: 0;
+        font-size: x-small;
+    }
+
+    .staters img {
+        width: 100px;
+    }
+
+    .staters p {
+        color: rgb(246, 11, 11);
+    }
+
+
+}
